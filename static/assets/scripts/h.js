@@ -173,7 +173,7 @@ const SplashT = [
   "Thanks for using the site",
   "Follow me on Twitter/X  (@11bunno11)",
   "Follow me on Instagram  (11bun.no11)",
-  "Im on BlueSky too! to my Youtube (@11bunno11)",
+  "Im on BlueSky too! (@11bunno11)",
   "Check out the settings page",
   "Check out my super cool website (https://11bunno11.neocities.org)",
 ]
