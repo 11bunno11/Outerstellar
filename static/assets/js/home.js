@@ -102,37 +102,4 @@ function randRange(min, max) {
   }
   heading.replaceChildren(frag);
 }
-)
-  
-function popoutTab() {
-  const activeIframe = document.querySelector("#frame-container iframe.active");
-  if (!activeIframe) {
-    console.error("No active iframe found");
-    return;
-  }
-
-  const newWindow = window.open("about:blank", "_blank");
-  if (!newWindow) return;
-
-  const cloakName = store.get("name") || "My Drive - Google Drive";
-  const cloakIcon = store.get("icon") || "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
-
-  newWindow.document.title = (window.laceTitle || addressBar.laceZeroWidth)(cloakName);
-
-  const link = newWindow.document.createElement("link");
-  link.rel = "icon";
-  link.href = encodeURI(cloakIcon);
-  newWindow.document.head.appendChild(link);
-
-  const newIframe = newWindow.document.createElement("iframe");
-  const style = newIframe.style;
-  style.position = "fixed";
-  style.top = style.bottom = style.left = style.right = 0;
-  style.border = style.outline = "none";
-  style.width = style.height = "100%";
-  newIframe.src = activeIframe.src;
-
-  newWindow.document.body.appendChild(newIframe);
-}
-
-();
+)();
