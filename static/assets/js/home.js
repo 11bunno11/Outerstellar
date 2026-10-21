@@ -46,16 +46,15 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && store.get("ab") === 
 }
 
 const SplashT = [
-  "Over 8 Million Users since 2023",
-  "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
-  "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
-  "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
+  "Bloat-free proxy",
+  "No predatory tracking",
+  "speed, guranteed",
+  "follow me on X/twitter @silica_jello",
+  "visit my website silicajello.com",
+  "*weezer riff*",
+  "visit my project Ternbook!",
+  "zero interruptions guranteed",
+  "meowwwwwwww :3",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -77,24 +76,6 @@ function cycleSplash() {
 paintSplash();
 SplashE.addEventListener("click", cycleSplash);
 
-function getRandomUrl() {
-  const randomUrls = [
-    "https://kahoot.it",
-    "https://classroom.google.com",
-    "https://drive.google.com",
-    "https://google.com",
-    "https://docs.google.com",
-    "https://slides.google.com",
-    "https://www.nasa.gov",
-    "https://blooket.com",
-    "https://clever.com",
-    "https://edpuzzle.com",
-    "https://khanacademy.org",
-    "https://wikipedia.org",
-    "https://dictionary.com",
-  ];
-  return randomUrls[randRange(0, randomUrls.length)];
-}
 
 function randRange(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
