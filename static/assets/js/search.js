@@ -8,37 +8,6 @@ function xorKeyValue(key) {
   return Number.isFinite(value) && value > 1 ? (value % 30) + 2 : 2;
 }
 
-function popoutTab() {
-  const activeIframe = document.querySelector("#frame-container iframe.active");
-  if (!activeIframe) {
-    console.error("No active iframe found");
-    return;
-  }
-
-  const newWindow = window.open("about:blank", "_blank");
-  if (!newWindow) return;
-
-  const cloakName = store.get("name") || "My Drive - Google Drive";
-  const cloakIcon = store.get("icon") || "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
-
-  newWindow.document.title = (window.laceTitle || addressBar.laceZeroWidth)(cloakName);
-
-  const link = newWindow.document.createElement("link");
-  link.rel = "icon";
-  link.href = encodeURI(cloakIcon);
-  newWindow.document.head.appendChild(link);
-
-  const newIframe = newWindow.document.createElement("iframe");
-  const style = newIframe.style;
-  style.position = "fixed";
-  style.top = style.bottom = style.left = style.right = 0;
-  style.border = style.outline = "none";
-  style.width = style.height = "100%";
-  newIframe.src = activeIframe.src;
-
-  newWindow.document.body.appendChild(newIframe);
-}
-
 const encoder = {
   // biome-ignore format: compact
   xor: { encode: (url, key) => url && encodeURIComponent(url.split("").map((char, index) => (index % xorKeyValue(key) ? String.fromCharCode(char.charCodeAt(0) ^ xorKeyValue(key)) : char)).join("")), decode: (url, key) => { const [value, tail] = splitPayload(url); if (!value) return value; const xorKey = xorKeyValue(key); return decodeURIComponent(value).split("").map((char, index) => (index % xorKey ? String.fromCharCode(char.charCodeAt(0) ^ xorKey) : char)).join("") + tail } },
