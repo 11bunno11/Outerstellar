@@ -19,6 +19,19 @@
 </head>
 
 <body id="tab-view">
+    <div class="browser-bar">
+    <div class="browser-container">
+      <div class="browser-left">
+        <img id="nav-logo" class="browser-logo" src="/assets/media/favicon/main.png" />
+        <button title="Home Page" id="home-page" class="browser-button" onclick="goHome()">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <form id="search-form" class="browser-post" method="POST">
+          <input id="input" class="address-bar" placeholder="Search or enter a new URL" type="text" />
+        </form>
+      </div>
+    </div>
+  </div>
   <div class="frame-container" id="frame-container"></div>
   <script src="/assets/js/vendor.js"></script>
   <script src="/assets/js/search.js"></script>
