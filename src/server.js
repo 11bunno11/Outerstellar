@@ -9,8 +9,6 @@ import cookieParser from "cookie-parser";
 import express from "express";
 import basicAuth from "express-basic-auth";
 import config from "../config.js";
-// import { mountAnalytics } from "./analytics.js";
-import { mountGhGames } from "./games.js";
 import { createBlockVerdict, setupFiltering } from "./filtering/index.js";
 import { mountMasqr } from "./Masqr.js";
 import { injectVersionInfo, resolveVersionInfo } from "./version.js";
@@ -88,7 +86,6 @@ if (config.masqr?.enabled) {
   console.log(chalk.green("🔑 Masqr gate is enabled"));
 }
 
-mountGhGames(app);
 
 app.use(cookieParser());
 app.use(express.json());
@@ -146,9 +143,6 @@ if (!vendorMap) {
 }
 
 const routes = [
-  { path: "/apps", file: "apps.html" },
-  { path: "/games", file: "games.html" },
-  { path: "/play.html", file: "games.html" },
   { path: "/settings", file: "settings.html" },
   { path: "/tabs", file: "tabs.html" },
   { path: "/home", file: "home.html" },
