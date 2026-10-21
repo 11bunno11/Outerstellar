@@ -4,6 +4,14 @@
    align-items: center;
 }
 
+#top-wrapper {
+  position: absolute;
+  top: 10px;   /* â† CHANGE THIS TO MOVE IT */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;   /* keeps it centered */
+}
+
 .title {
    font-size: 10vh;
    color: var(--brand-text, var(--text));
