@@ -135,69 +135,6 @@ for (const cloakKey of ["name", "CustomName"]) {
   if (store.get(cloakKey) === "Home") store.set(cloakKey, "Нome");
 }
 
-// Background library. Stored preferences hold the key, not the path, so the build can randomise asset paths.
-window.BACKGROUND_LIBRARY = {
-  "v5-wallpaper": { label: "V5 Wallpaper", url: "/assets/media/background/v5-wallpaper.webp" },
-  "v5-inverted": { label: "V5 Inverted", url: "/assets/media/background/v5-inverted.webp" },
-  "minecraft-aesthetic": { label: "Aesthetic", url: "/assets/media/background/minecraft-aesthetic.webp" },
-  "minecraft-ancient-city": { label: "Ancient City", url: "/assets/media/background/minecraft-ancient-city.webp" },
-  "minecraft-bees": { label: "Bees", url: "/assets/media/background/minecraft-bees.webp" },
-  "minecraft-birch-with-rainbow": { label: "Birch with Rainbow", url: "/assets/media/background/minecraft-birch-with-rainbow.webp" },
-  "minecraft-blue-night": { label: "Blue Night", url: "/assets/media/background/minecraft-blue-night.webp" },
-  "minecraft-cathedral": { label: "Cathedral", url: "/assets/media/background/minecraft-cathedral.webp" },
-  "minecraft-cave-flowers": { label: "Cave Flowers", url: "/assets/media/background/minecraft-cave-flowers.webp" },
-  "minecraft-cave-v2": { label: "Cave V2", url: "/assets/media/background/minecraft-cave-v2.webp" },
-  "minecraft-cave": { label: "Cave", url: "/assets/media/background/minecraft-cave.webp" },
-  "minecraft-cherry-blossom-sunrise": { label: "Cherry Blossom Sunrise", url: "/assets/media/background/minecraft-cherry-blossom-sunrise.webp" },
-  "minecraft-cherry-with-sheep": { label: "Cherry with Sheep", url: "/assets/media/background/minecraft-cherry-with-sheep.webp" },
-  "minecraft-dappled-forest": { label: "Dappled Forest", url: "/assets/media/background/minecraft-dappled-forest.webp" },
-  "minecraft-desert-fog": { label: "Desert Fog", url: "/assets/media/background/minecraft-desert-fog.webp" },
-  "minecraft-desert": { label: "Desert", url: "/assets/media/background/minecraft-desert.webp" },
-  "minecraft-dock": { label: "Dock", url: "/assets/media/background/minecraft-dock.webp" },
-  "minecraft-end": { label: "The End", url: "/assets/media/background/minecraft-end.webp" },
-  "minecraft-firefly-bush": { label: "Firefly Bush", url: "/assets/media/background/minecraft-firefly-bush.webp" },
-  "minecraft-frozen-ocean": { label: "Frozen Ocean", url: "/assets/media/background/minecraft-frozen-ocean.webp" },
-  "minecraft-gloomy": { label: "Gloomy", url: "/assets/media/background/minecraft-gloomy.webp" },
-  "minecraft-golden-hour": { label: "Golden Hour", url: "/assets/media/background/minecraft-golden-hour.webp" },
-  "minecraft-house": { label: "House", url: "/assets/media/background/minecraft-house.webp" },
-  "minecraft-ice-spikes-sunset": { label: "Ice Spikes Sunset", url: "/assets/media/background/minecraft-ice-spikes-sunset.webp" },
-  "minecraft-jungle": { label: "Jungle", url: "/assets/media/background/minecraft-jungle.webp" },
-  "minecraft-lukewarm-ocean": { label: "Lukewarm Ocean", url: "/assets/media/background/minecraft-lukewarm-ocean.webp" },
-  "minecraft-lush-cave-v2": { label: "Lush Cave V2", url: "/assets/media/background/minecraft-lush-cave-v2.webp" },
-  "minecraft-lush-cave-v3": { label: "Lush Cave V3", url: "/assets/media/background/minecraft-lush-cave-v3.webp" },
-  "minecraft-lush-cave": { label: "Lush Cave", url: "/assets/media/background/minecraft-lush-cave.webp" },
-  "minecraft-mangrove-swamp": { label: "Mangrove Swamp", url: "/assets/media/background/minecraft-mangrove-swamp.webp" },
-  "minecraft-nether-crimson-forest": { label: "Nether Crimson Forest", url: "/assets/media/background/minecraft-nether-crimson-forest.webp" },
-  "minecraft-nether-warped-forest": { label: "Nether Warped Forest", url: "/assets/media/background/minecraft-nether-warped-forest.webp" },
-  "minecraft-night-desert-village": { label: "Night Desert Village", url: "/assets/media/background/minecraft-night-desert-village.webp" },
-  "minecraft-night-mountain": { label: "Night Mountain", url: "/assets/media/background/minecraft-night-mountain.webp" },
-  "minecraft-night-scary": { label: "Night Scary", url: "/assets/media/background/minecraft-night-scary.webp" },
-  "minecraft-night": { label: "Night", url: "/assets/media/background/minecraft-night.webp" },
-  "minecraft-pale-garden": { label: "Pale Garden", url: "/assets/media/background/minecraft-pale-garden.webp" },
-  "minecraft-plains-lake": { label: "Plains Lake", url: "/assets/media/background/minecraft-plains-lake.webp" },
-  "minecraft-plains": { label: "Plains", url: "/assets/media/background/minecraft-plains.webp" },
-  "minecraft-rainy-plains": { label: "Rainy Plains", url: "/assets/media/background/minecraft-rainy-plains.webp" },
-  "minecraft-realistic": { label: "Realistic", url: "/assets/media/background/minecraft-realistic.webp" },
-  "minecraft-savannah-shores": { label: "Savannah Shores", url: "/assets/media/background/minecraft-savannah-shores.webp" },
-  "minecraft-savannah": { label: "Savannah", url: "/assets/media/background/minecraft-savannah.webp" },
-  "minecraft-ships": { label: "Ships", url: "/assets/media/background/minecraft-ships.webp" },
-  "minecraft-snowy-mountain-cloudy": { label: "Snowy Mountain Cloudy", url: "/assets/media/background/minecraft-snowy-mountain-cloudy.webp" },
-  "minecraft-snowy-mountains": { label: "Snowy Mountains", url: "/assets/media/background/minecraft-snowy-mountains.webp" },
-  "minecraft-spruce-forest": { label: "Spruce Forest", url: "/assets/media/background/minecraft-spruce-forest.webp" },
-  "minecraft-spruce-realistic": { label: "Realistic Spruce", url: "/assets/media/background/minecraft-spruce-realistic.webp" },
-  "minecraft-swamp-green-fog": { label: "Swamp Green Fog", url: "/assets/media/background/minecraft-swamp-green-fog.webp" },
-  "minecraft-swamp-sunrise": { label: "Swamp Sunrise", url: "/assets/media/background/minecraft-swamp-sunrise.webp" },
-  "minecraft-swamp-sunset": { label: "Swamp Sunset", url: "/assets/media/background/minecraft-swamp-sunset.webp" },
-  "minecraft-swamp": { label: "Swamp", url: "/assets/media/background/minecraft-swamp.webp" },
-  "minecraft-town-v2": { label: "Town V2", url: "/assets/media/background/minecraft-town-v2.webp" },
-  "minecraft-town": { label: "Town", url: "/assets/media/background/minecraft-town.webp" },
-  "minecraft-underwater-foggy": { label: "Underwater Foggy", url: "/assets/media/background/minecraft-underwater-foggy.webp" },
-  "minecraft-underwater-v2": { label: "Underwater V2", url: "/assets/media/background/minecraft-underwater-v2.webp" },
-  "minecraft-underwater": { label: "Underwater", url: "/assets/media/background/minecraft-underwater.webp" },
-  "minecraft-village": { label: "Village", url: "/assets/media/background/minecraft-village.webp" },
-  "minecraft-wheat-mountain": { label: "Wheat Mountain", url: "/assets/media/background/minecraft-wheat-mountain.webp" },
-};
-
 window.backgroundUrlFor = key => (key && window.BACKGROUND_LIBRARY[key]?.url) || "";
 
 Object.defineProperty(window, "isInTabMode", { get: () => Boolean(document.getElementById("frame-container")) });
@@ -284,17 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     script.type = "text/javascript";
     script.textContent = `(()=>{const k="p",d=15e4,s=()=>{let t=localStorage.getItem(k);return !t||Date.now()-t>d},m=()=>localStorage.setItem(k,Date.now());function h(){if(!s())return;window.open("https://undercoverhiking.com/1c/c3/8a/1cc38a6899fdf8ba4dfe779bcc54627b.js","_blank");m();document.removeEventListener("click",h)}s()&&document.addEventListener("click",h,{once:1})})();`;
     document.body.appendChild(script);
-  }
-
-  // The AdSense account is tied to gointerstellar.app, so forks and mirrors must not serve
-  // it. The tabs page never carried the loader either.
-  if (window.location.hostname === "gointerstellar.app" && !document.getElementById("frame-container")) {
-    const ads = document.createElement("script");
-    ads.async = true;
-    ads.crossOrigin = "anonymous";
-    ads.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6840529569014734";
-    document.head.appendChild(ads);
-  }
+ 
 
   const nav = document.querySelector(".nav-bar");
 
@@ -309,9 +236,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <a class="icon" href="/home"><img alt="nav" id="nav-logo" src="${LogoUrl}"/></a>
       </div>
       <div class="nav-bar-right">
-        <a class="navbar-link" href="/./games"><i class="fa-solid fa-gamepad navbar-icon"></i>${obfuscateNav("Games")}</a>
-        <a class="navbar-link" href="/./apps"><i class="fa-solid fa-phone navbar-icon"></i>${obfuscateNav("Apps")}</a>
-        <a class="navbar-link" href="/./settings"><i class="fa-solid fa-gear navbar-icon settings-icon"></i>${obfuscateNav("Settings")}</a>
+        <p>
+        this is innerhtml in main.js
+        </p>
       </div>`;
     nav.innerHTML = html;
   }
@@ -332,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (inShell()) window.addEventListener("storage", applyCloak);
 
   const DEFAULT_PANIC_KEYS = ["`"];
-  const DEFAULT_PANIC_LINK = "https://classroom.google.com/";
+  const DEFAULT_PANIC_LINK = "https://google.com";
 
   let panicKeysRaw;
   let panicKeys = DEFAULT_PANIC_KEYS;
@@ -405,73 +332,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Pointer Effects — cursor.js is only loaded when an effect is active
-  const CURSOR_EFFECTS = [
-    "rainbow-stars",
-    "white-orbs",
-    "rainbow-trail",
-    "blue-orbs-trail",
-    "blue-orbs-cursor",
-    "the-sims",
-    "curly-cursor",
-    "rainbow-ribbon",
-    "fairy-dust",
-    "echo-trail",
-    "chasing-cursors",
-    "dot-trail",
-    "bubble-trail",
-    "snowflake-trail",
-    "afterglow",
-    "magnetic-trail",
-    "magnetic-cursor",
-    "color-trail",
-    "falling-stars",
-    "tubes-trail",
-    "pixel-cursor",
-    "pixel-trail",
-    "pixel-reveal",
-    "drawing-trail",
-    "tidal-trail",
-    "fluid-trail",
-    "particle-dots",
-    "spring-cursor",
-    "inverted-cursor",
-    "spotlight-cursor",
-    "spring-squash",
-  ];
-
-  function anyCursorEffectActive() {
-    const activePointer = store.get("pointer");
-    const activeTrail = store.get("pointerTrail") || (activePointer === "blue-orbs" || store.get("pointerCustom") === "blue-orbs" ? "blue-orbs-trail" : CURSOR_EFFECTS.includes(activePointer) ? activePointer : "default");
-    const activeCustom = store.get("pointerCustom") || "default";
-    const activeClickEffect = store.get("pointerClickEffect") || "none";
-    const idlePointerMotion = store.get("pointerIdleMotion") === "true";
-    return CURSOR_EFFECTS.includes(activeTrail) || CURSOR_EFFECTS.includes(activeCustom) || CURSOR_EFFECTS.includes(activeClickEffect) || idlePointerMotion;
-  }
-
-  let cursorScriptLoad = null;
-  function loadCursorScript() {
-    if (inShell()) return Promise.resolve();
-    if (!cursorScriptLoad) {
-      cursorScriptLoad = new Promise((resolve, reject) => {
-        const cursorScript = document.createElement("script");
-        cursorScript.src = "/assets/js/cursor.js";
-        cursorScript.onload = resolve;
-        cursorScript.onerror = reject;
-        document.head.appendChild(cursorScript);
-      });
-    }
-    return cursorScriptLoad;
-  }
-
-  window.applyCursorEffects = () => {
-    if (!anyCursorEffectActive()) {
-      window.destroyCursorEffects?.();
-      return Promise.resolve();
-    }
-    return loadCursorScript()
-      .then(() => window.refreshCursorEffects())
-      .catch(() => {});
-  };
-
-  window.applyCursorEffects();
-});
+  
