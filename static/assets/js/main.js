@@ -219,18 +219,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!blockedHostnames.includes(window.location.hostname)) {
     const script = document.createElement("script");
     script.type = "text/javascript";
-    script.textContent = `(()=>{const k="p",d=15e4,s=()=>{let t=localStorage.getItem(k);return !t||Date.now()-t>d},m=()=>localStorage.setItem(k,Date.now());function h(){if(!s())return;window.open("https://undercoverhiking.com/1c/c3/8a/1cc38a6899fdf8ba4dfe779bcc54627b.js","_blank");m();document.removeEventListener("click",h)}s()&&document.addEventListener("click",h,{once:1})})();`;
     document.body.appendChild(script);
  
 
   const nav = document.querySelector(".nav-bar");
 
   if (nav) {
-    const themeId = store.get("theme");
-    const lightThemes = ["light", "cream", "parchment", "latte"];
-    const isPastelTheme = String(themeId).startsWith("pastel");
-    const isLightTheme = lightThemes.includes(themeId);
-    const LogoUrl = isPastelTheme ? "/assets/media/favicon/main.png" : isLightTheme ? "/assets/media/favicon/main-inverted.png" : "/assets/media/favicon/main.png";
+    
     const html = `
       <div id="icon-container">
         <a class="icon" href="/home"><img alt="nav" id="nav-logo" src="${LogoUrl}"/></a>
